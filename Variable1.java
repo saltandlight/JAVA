@@ -1,36 +1,18 @@
-package day01;
+package day02;
 
-//Java Application
 public class Variable1 {
-	
+
 	public static void main(String[] args) {
-		int a = 10; //Initialization
-		int b = 20; //a,b가 메모리에 올라감.
-		int c = 20;
+		int a=10;
+		int b=10;
+		double d= 123.456789;
 		
-		int temp = 0;
-		/*min
-		if(a < b) {
-			temp = a;
-			if(c < temp) temp=c;
-		}
-		else {
-			temp = b;
-			if(c < temp) temp=c;
-		} 
-		
-		*/
-		
-		if(a < b) {
-			temp=b;
-			if(temp < c) temp = c;
-		}
-		else {
-			temp=a;
-			if(temp < c) temp=c;
-		}
-		
-		System.out.println(temp);
-		//7~10 line이 차례로 움직임
+		System.out.printf("\treuslt= %d, %d\n", a, b);
+		System.out.printf("\tresult = %o\n", a);
+		System.out.printf("\tresult = %x\n", a);
+		System.out.printf("result=%10.3f\n",  d); //앞자리는 10자리로 하고 소숫점 3번째 자리까지 출력해라.
+		System.out.println(d);
+
 	}
+
 }
