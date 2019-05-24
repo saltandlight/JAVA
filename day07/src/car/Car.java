@@ -7,10 +7,32 @@ public class Car {
 	private String name;
 	private String color;
 	private int fSize;  //최대치
-	private int cfSize; //현재 값
+	private int cfSize;
+	//=defaultSize*2; //현재 값
 	private int speed;
 	private int maxSpeed;
+	private int defaultSize=100;
+	private static int serial=1;
+	private static int count=0;
 	//기름을 넣고 갈 때 스피드가 올라가면서 기름의 양이 준다.
+	
+	// initialization block - Car c = new Car(); 시에 일어남.
+	{
+//		cfSize=defaultSize*2;
+//		if(cfSize<=0) {
+//			cfSize=0;
+//		}
+//		cfSize++;
+		count++;
+		serial=count;
+	}
+	static {
+//		serial*=1000;
+		count*=1000;
+	}
+	
+	
+	
 	
 	//constructor
 	public Car() { //default; argument가 아무것도 없는 것.
